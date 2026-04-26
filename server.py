@@ -19,5 +19,9 @@ def send():
 def leaderboard():
     return jsonify(scores)
 
+@app.route("/")
+def home():
+    return "OK WORKING"
+
 if __name__ == "__main__":
     app.run()
